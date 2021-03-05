@@ -1,0 +1,67 @@
+.background{
+    background-image: url("/Resources/img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul {
+    list-style-type: none;
+    margin: 0 0 0 150px;
+    padding: 0px;
+    overflow: auto;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  nav a {
+    width: 100px;
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-family: Arial;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  /* Con esto cambio el color cuando hay focus */
+  li a:hover {
+    background-color: #111;
+  }
+
+  .logo img {
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 5px;
+    
+  }
+  nav {
+      width: 100%;
+      background: #D9AC00;
+      overflow: auto;
+  }
+  .title {
+      color: white;
+      margin-top: 150px;
+      margin-left: 50px;
+      font-size: 70px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .subtitle{
+    color: white;
+    margin-left: 50px;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .description{
+    color: white;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 40%;
+  }
+  .social icons {
+    position: absolute;
+    margin-top: 0;
+    margin-left: 5px;
+  }
