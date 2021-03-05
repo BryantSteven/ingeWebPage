@@ -1,0 +1,239 @@
+/* Configuración global */
+:root {
+  --content-background: #FCC302; /* Fondo amarillo general de la pagina */
+  --nav-background: #DAAC00; /* Naranja oscuro de barra de busqueda */
+  --footer-background: #343434; /* Gris de pie de pagina */
+  --text-black-color: #313243; /* Color de texto azul oscuro */
+  --secondary-background: #00BEC9; /* Azul de iconos */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Definimos la fuente */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: white;
+  position: static;
+  font-family: "Roboto";
+  font-weight: normal;
+}
+
+.container {
+  width: 100%;
+}
+
+p {
+  padding: 10px 0;
+}
+
+/* Navbar, encabezado */
+header {
+  background-color: var(--nav-background);
+  color: white;
+  width: 100%;
+  padding: 1.2rem 10rem;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 5fr 3fr;
+  overflow: hidden;
+  align-items: center;
+}
+
+.header-logo {
+  grid-area: 1/1/2/2;
+  justify-items: center;
+}
+
+.nav {
+  font-size: large;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  float: left;
+  margin: 0 2rem 0 0;
+  list-style: none;
+  text-align: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.search {
+  justify-content: center;
+  align-items: center;
+  float: right;
+}
+
+.search input[type="text"] {
+  border: none;
+  font-size: medium;
+  padding: 6px 10px;
+  width: 80%;
+  background-color: var(--content-background);
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+.fa-search {
+  color: white;
+}
+
+.search button {
+  float: right;
+  padding: 7px 10px;
+  width: 20%;
+  height: auto;
+  border: none;
+  cursor: pointer;
+  background-color: var(--secondary-background);
+}
+
+/* Contenido, como en el diseño, se alterna entre amarillo y blanco */
+h1 {
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+#title {
+  text-align: center;
+}
+
+.content-history,
+.content-team,
+.content-brand,
+.content-terms,
+.content-privacy {
+  padding: 1.5rem 10rem;
+  text-align: left;
+}
+
+.content-history,
+.content-brand,
+.content-privacy {
+  background-color: var(--content-background);
+  color: white;
+}
+.content-history,
+.content-brand,
+.content-privacy a {
+  color: white;
+}
+
+.content-team,
+.content-terms {
+  color: var(--text-black-color);
+}
+/* Contenido de nuestro equipo */
+.team-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.card {
+  padding: 2px 16px;
+  text-align: center;
+}
+
+.card-container .fa-instagram,
+.card-container .fa-facebook,
+.card-container .fa-twitter-square,
+.card-container .fa-whatsapp-square {
+  color: var(--nav-background);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-background);
+  color: white;
+  width: 100%;
+  padding: 5rem 10rem;
+  display: grid;
+  grid-template-rows: 90% 10%;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+
+.footer-about {
+  grid-area: 1/1/2/2;
+}
+
+.footer-services {
+  grid-area: 1/2/2/3;
+}
+
+.footer-contact {
+  text-align: end;
+}
+
+.contact-message {
+  width: 100%;
+  height: 4em;
+}
+
+.contact-message input[type="text"] {
+  border: none;
+  font-size: large;
+  padding: 6px 10px;
+  height: 100%;
+  width: 75%;
+  background-color: var(--content-background);
+  color: white;
+}
+
+.contact-message button {
+  float: right;
+  padding: 7px 10px;
+  height: 100%;
+  width: 25%;
+  border: none;
+  cursor: pointer;
+  background-color: var(--secondary-background);
+}
+
+.contact-social {
+  padding-top: 1rem;
+}
+
+.credits {
+  padding-top: 0.1rem;
+}
