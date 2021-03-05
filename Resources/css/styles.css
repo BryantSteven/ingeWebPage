@@ -42,20 +42,21 @@ ul {
   }
   .title {
       color: white;
-      margin-top: 150px;
-      margin-left: 50px;
-      font-size: 70px;
+      margin-top: 200px;
+      margin-left: 100px;
+      font-size: 100px;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      letter-spacing: 15px;
   }
   .subtitle{
     color: white;
-    margin-left: 50px;
+    margin-left: 100px;
     font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .description{
     color: white;
-    margin-left: 50px;
+    margin-left: 100px;
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 40%;
@@ -64,4 +65,7 @@ ul {
     position: absolute;
     margin-top: 0;
     margin-left: 5px;
+  }
+  .mapButton {
+    margin-left: 100px;
   }
