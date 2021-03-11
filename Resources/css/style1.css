@@ -18,9 +18,12 @@ body{
 }
 
 
-button {
+
+.button_C {
     color: var(--Fuente);
     background-color: var(--Boton);
+    margin-left: 130px;
+    margin-top: 15px;
   }
 .learnBotton{
     border-radius: 5px;
@@ -50,13 +53,65 @@ header{
     align-items: center;
 }
 
+.fa-search:before {
+  content: "\f002";
+}
+.fa-search {
+  color: white;
+}
+
+.Div_button{
+  display: inline-block;
+
+}
+
+.S_Botton{
+  border-radius: 5px;
+  padding: 5px 10px;
+  border :2px solid #FFFFFF;  
+  outline: var(--Fuente);
+  color: var(--Fuente);
+  background-color: var(--Principal);
+  margin-left: 50px;
+  margin-top: 35px;
+}
+
+.search {
+  justify-content: center;
+  align-items: center;
+  float: right;
+}
+
+.search input[type="text"] {
+  border: none;
+  font-size: medium;
+  padding: 6px 10px;
+  width: 80%;
+  background-color: var(--Principal);
+  color: white;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.search button {
+  float: right;
+  padding: 7px 10px;
+  width: 20%;
+  height: auto;
+  border: none;
+  cursor: pointer;
+  background-color: var(--Boton);
+}
 
 .nav a {
     text-decoration: none;
     color: white;
 }
 li{
-    padding: 10px 100px;
+    padding: 10px 80px;
 }
 
 .nav {
@@ -91,13 +146,33 @@ ul > li {
     font-size: 45px;
     font-family : "Poppins";
     color : var(--Fuente);
-    
+    width: 37%;
+    margin-left: 130px;
+    margin-top: 70px;
 }
 .parrafo{
     font-size: 20px;
     font-family : "poppinsregular";
     color : var(--Fuente);
+    width: 40%;
+    margin-left: 130px;
+    margin-top: 30px;
+}
 
+.img_logo{
+  margin-right: 75px;
+  width: 182px;
+  height: 42px;
+
+}
+
+.img-derecha {
+  float: right;
+  margin-right: 65px;
+  margin-top : 25px;
+  font-size: 2px;
+  height: 504px;
+  width : 319;
 }
 
 a {
