@@ -1,10 +1,10 @@
 /* Configuración global */
 :root {
-  --content-background: #FCC302; /* Fondo amarillo general de la pagina */
-  --nav-background: #DAAC00; /* Naranja oscuro de barra de busqueda */
+  --content-background: #fcc302; /* Fondo amarillo general de la pagina */
+  --nav-background: #daac00; /* Naranja oscuro de barra de busqueda */
   --footer-background: #343434; /* Gris de pie de pagina */
   --text-black-color: #313243; /* Color de texto azul oscuro */
-  --secondary-background: #00BEC9; /* Azul de iconos */
+  --secondary-background: #00bec9; /* Azul de iconos */
 }
 
 * {
@@ -14,16 +14,44 @@
 }
 /* Definimos la fuente */
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Medium.ttf");
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.ttf");
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Light.ttf");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.ttf");
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.ttf");
+  font-weight: bold;
   font-style: normal;
 }
 
 body {
   background-color: white;
   position: static;
-  font-family: "Roboto";
+  font-family: "Poppins";
   font-weight: normal;
 }
 
@@ -46,11 +74,13 @@ header {
   grid-template-columns: 2fr 5fr 3fr;
   overflow: hidden;
   align-items: center;
+  font-size: 7pt;
 }
 
 .header-logo {
   grid-area: 1/1/2/2;
   justify-items: center;
+  width: 50%;
 }
 
 .nav {
@@ -78,6 +108,7 @@ header {
   justify-content: center;
   align-items: center;
   float: right;
+  width: 50%;
 }
 
 .search input[type="text"] {
@@ -127,7 +158,6 @@ h1 {
 }
 
 .content-history,
-.content-brand,
 .content-privacy {
   background-color: var(--content-background);
   color: white;
@@ -138,14 +168,94 @@ h1 {
   color: white;
 }
 
-.content-team,
+.content-brand img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 0;
+}
+
+.content-brand {
+  padding: 0;
+  z-index: 0;
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.content-brand #transparencia-amarilla {
+  background: var(--content-background);
+  z-index: 1;
+  width: 100%;
+  height: 79.3%;
+  position: absolute;
+  opacity: 0.8;
+}
+
+.content-brand #iconosvacuna {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 10rem;
+  transform: translate(0, 50%);
+}
+
+#ico1 {
+  padding: 4rem;
+  text-align: center;
+  opacity: 1;
+}
+
+#ico1 img {
+  width: 30%;
+  opacity: 1;
+}
+
+.content-team {
+  color: var(--text-black-color);
+}
+
 .content-terms {
   color: var(--text-black-color);
 }
-/* Contenido de nuestro equipo */
+
+.news-description {
+  color: var(--text-black-color);
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-weight: normal;
+  font-size: auto;
+}
+
+.news-description .card {
+  box-shadow: 0 4px 8px 0 #d6d6d6;
+  padding: 0;
+  margin: 0 1.5rem;
+  text-align: left;
+}
+
+.news-description .card-container {
+  padding: 5rem;
+}
+
+.news-description .card-container a {
+  color: var(--secondary-background);
+  font-weight: bolder;
+  text-decoration: none;
+}
+.news-description .card-container p {
+  color: var(--secondary-background);
+}
+
+/* #d6d6d6 */
+/* Contenido de nuestro equipo imagenes de las veterinarias*/
 .team-description {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .card {
   padding: 2px 16px;
